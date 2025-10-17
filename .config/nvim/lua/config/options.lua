@@ -45,7 +45,7 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 15
 
-vim.opt.completeopt = 'menuone,noselect,fuzzy,nosort'
+vim.opt.completeopt = "menuone,noselect,fuzzy,nosort"
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
@@ -92,7 +92,7 @@ vim.keymap.set("t", "<ESC>", "<C-\\><C-n>")
 -- Close hover popup if we move the cursor or jump to other buffer with gd
 vim.keymap.set("n", "K", function()
 	vim.lsp.buf.hover({
-        -- Disabled as these commands have weird side effects elsewhere.
+		-- Disabled as these commands have weird side effects elsewhere.
 		-- close_events = { "CursorMoved", "BufHidden" },
 		focusable = true,
 		max_width = 80,

@@ -96,9 +96,13 @@ Cheat sheet for nvim keybindings. Some are defaults, some are plugin-specific.
   	gra:        vim.lsp.buf.code_action
   	grr:        vim.lsp.buf.references
 
+## Snacks:
+    <leader>bd: Delete buffer without disrupting split-layout.
+
 ## Telescope:
   	<leader>ff: Files in folder
   	<leader>fg: Files in git
+        ctrl+t: Open file in tab
 
 ## LSP diagnostics
   	<leader>tn: Go to next diagnostics error
