@@ -108,9 +108,10 @@ Cheat sheet for nvim keybindings. Some are defaults, some are plugin-specific.
   	<leader>tn: Go to next diagnostics error
   	<leader>tp: Go to prev diagnostics error
 
-## nvim-cmp: (LSP auto-complete dialog)
-  	tab:        select next item in suggestion list, arrow keys also work
-  	shift+tab:  select prev item in suggestion list, arrow keys also work
+## blink-cmp: (LSP auto-complete dialog)
+    tab:          select next item in suggestion list, arrow keys also work
+    shift+tab:    select prev item in suggestion list, arrow keys also work
+    shift+space:  select and accept (ctrl+y also does this)
 
 ## Comment code (code_comments.lua)
     <leader>cc: Comment highlighted line(s)
