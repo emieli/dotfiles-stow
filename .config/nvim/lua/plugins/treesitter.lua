@@ -1,4 +1,5 @@
 return {
+	{ "geigerzaehler/tree-sitter-jinja2" },
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
