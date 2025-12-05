@@ -1,6 +1,10 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Make "/" search case insensitive unless I enter uppercase letter
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
