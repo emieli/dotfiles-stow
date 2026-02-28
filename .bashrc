@@ -13,9 +13,9 @@ shopt -s histappend
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 
-export PATH=$HOME/.local/bin/nvim-linux-x86_64/bin:$PATH
+export PATH=$HOME/.local/bin/nvim/bin:$PATH
 export PATH=$HOME/.local/bin/go/bin:$HOME/go/bin:$PATH
 
-if [ -f ~/.local/bin/node-v22.18.0-linux-x64/bin/node ]; then
-    export PATH=$PATH:~/.local/bin/node-v22.18.0-linux-x64/bin
+if [ -f ~/.local/bin/node/bin/node ]; then
+    export PATH=$PATH:~/.local/bin/node/bin
 fi
