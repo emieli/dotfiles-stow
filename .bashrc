@@ -17,6 +17,9 @@ shopt -s histappend
 
 alias ls='ls --color=auto'
 alias ll='ls -lh'
+alias gs='git status'
+alias gd='git diff'
+alias gds='git diff --staged'
 
 export PATH=$HOME/.local/bin/nvim/bin:$PATH
 export PATH=$HOME/.local/bin/go/bin:$HOME/go/bin:$PATH
