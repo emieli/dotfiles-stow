@@ -103,6 +103,9 @@ Cheat sheet for nvim keybindings. Some are defaults, some are plugin-specific.
   	<leader>ff: Files in folder
   	<leader>fg: Files in git
         ctrl+t: Open file in tab
+           tab: Select file for quickfix
+         alt+q: Open all selected files in quickfix window
+        ctrl+q: Open all matches in quickfix window
 
 ## LSP diagnostics
   	<leader>tn: Go to next diagnostics error
