@@ -6,6 +6,7 @@ fi
 
 if [ -f /opt/homebrew/etc/bash_completion ]; then
     . /opt/homebrew/etc/bash_completion
+    export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 fi
 
 
