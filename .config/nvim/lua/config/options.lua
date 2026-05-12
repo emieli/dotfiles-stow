@@ -68,6 +68,9 @@ vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 vim.keymap.set("n", "L", '<cmd>echo "L was pressed"<CR>')
 vim.keymap.set("n", "H", '<cmd>echo "H was pressed"<CR>')
 
+-- Send $ to go to end of line before sending % to highlight everything within the brackets
+vim.keymap.set("v", "%", "$%")
+
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
