@@ -10,11 +10,15 @@ if [ -f /opt/homebrew/etc/bash_completion ]; then
 fi
 
 
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
-# append to the history file, don't overwrite it
+# Sync history between sessions while removing duplicate lines:
+# https://unix.stackexchange.com/questions/48713/how-can-i-remove-duplicates-in-my-bash-history-preserving-order/419779#419779
+# Install tac on MacOS: "brew install coreutils"
 shopt -s histappend
+export HISTCONTROL=ignoreboth:erasedups
+export PROMPT_COMMAND="history -n; history -w; history -c; history -r"
+tac "$HISTFILE" | awk '!x[$0]++' > /tmp/tmpfile  &&
+                tac /tmp/tmpfile > "$HISTFILE"
+rm /tmp/tmpfile
 
 # Silence MacOS message about zsh being default shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
