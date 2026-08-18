@@ -10,7 +10,7 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
-			go = { "goimports", "gofmt", "golines" },
+			go = { "goimports", "gofmt" },
 			templ = { "templ" },
 		},
 		-- Set default options
