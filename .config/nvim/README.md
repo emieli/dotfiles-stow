@@ -48,7 +48,7 @@ curl -LO https://github.com/neovim/neovim-releases/releases/download/v0.11.2/nvi
 mkdir -p $HOME/.local/bin
 rm -rf   $HOME/.local/bin/nvim-linux-x86_64
 tar -C   $HOME/.local/bin -xzf nvim-linux-x86_64.tar.gz
-echo "export PATH=\$PATH:$HOME/.local/bin/nvim-linux-x86_64/bin" >> $HOME/.bashrc
+# echo "export PATH=\$PATH:$HOME/.local/bin/nvim-linux-x86_64/bin" >> $HOME/.bashrc
 ```
 
 # Any Linux
@@ -61,8 +61,8 @@ wget https://go.dev/dl/go1.25.0.linux-amd64.tar.gz # <-- Change version number!
 mkdir -p $HOME/.local/bin
 rm -rf   $HOME/.local/bin/go
 tar -C   $HOME/.local/bin -xzf go1.25.0.linux-amd64.tar.gz
-echo "export PATH=$HOME/.local/bin/go/bin:\$PATH" >> $HOME/.bashrc
-echo "export PATH=$HOME/go/bin:\$PATH" >> $HOME/.bashrc # for things installed with "go install"
+# echo "export PATH=$HOME/.local/bin/go/bin:\$PATH" >> $HOME/.bashrc
+# echo "export PATH=$HOME/go/bin:\$PATH" >> $HOME/.bashrc # for things installed with "go install"
 ```
 We need the $HOME/go/bin folder in path as this is where golang tools like air/wgo/etc tend to be installed. Run **bash && go version** to ensure that Go binary is executed correctly.
 
@@ -75,7 +75,7 @@ wget https://nodejs.org/dist/v22.18.0/node-v22.18.0-linux-x64.tar.xz
 mkdir -p $HOME/.local/bin
 rm -rf   $HOME/.local/bin/node-v22.18.0-linux-x64
 tar -C   $HOME/.local/bin -xf node-v22.18.0-linux-x64.tar.xz
-echo "export PATH=\$PATH:$HOME/.local/bin/node-v22.18.0-linux-x64/bin" >> $HOME/.bashrc
+# echo "export PATH=\$PATH:$HOME/.local/bin/node-v22.18.0-linux-x64/bin" >> $HOME/.bashrc
 ```
 *type **bash** to apply the PATH command*
 
