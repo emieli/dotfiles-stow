@@ -18,6 +18,7 @@ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x8
 mkdir -p $HOME/.local/bin
 rm -rf   $HOME/.local/bin/nvim-linux-x86_64
 tar -C   $HOME/.local/bin -xzf nvim-linux-x86_64.tar.gz
+mv       $HOME/.local/bin/nvim-linux-x86_64 $HOME/.local/bin/nvim
 echo "export PATH=\$PATH:$HOME/.local/bin/nvim-linux-x86_64/bin" >> $HOME/.bashrc
 ```
 *type **bash** to open a new shell to apply the PATH command*
@@ -75,6 +76,7 @@ wget https://nodejs.org/dist/v22.18.0/node-v22.18.0-linux-x64.tar.xz
 mkdir -p $HOME/.local/bin
 rm -rf   $HOME/.local/bin/node-v22.18.0-linux-x64
 tar -C   $HOME/.local/bin -xf node-v22.18.0-linux-x64.tar.xz
+mv       $HOME/.local/bin/node-v22.18.0-linux-x64 $HOME/.local/bin/node
 # echo "export PATH=\$PATH:$HOME/.local/bin/node-v22.18.0-linux-x64/bin" >> $HOME/.bashrc
 ```
 *type **bash** to apply the PATH command*
